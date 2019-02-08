@@ -1,0 +1,39 @@
+body{
+    margin:0;
+}
+#estruturaGrid{
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'nav nav nav nav'
+                         'section section aside aside'
+                         'footer footer footer footer';
+    grid-template-rows: 200px 50px 700px 100px;
+}
+header{
+    grid-area: header;
+    background-color: pink;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header img{
+    width: 15%;
+    align-self: flex-start;
+}
+nav{
+    grid-area: nav;
+    background-color:black
+}
+section{
+    grid-area: section;
+    background-color: rgb(252, 125, 79);
+}
+aside{
+    grid-area:aside;
+    background-color:rgb(77, 204, 247);
+}
+footer{
+    grid-area: footer;
+    background-color:rgb(69, 248, 123)
+}
